@@ -10,9 +10,9 @@
 
 ## Requisitos
 
-1.- [Ruby](https://www.ruby-lang.org/en/downloads/) >= 2.2.2
-2.- Sistema de paquete [RubyGems](https://rubygems.org/)
-3.- [SQLite3](https://www.sqlite.org/)
+1. [Ruby](https://www.ruby-lang.org/en/downloads/) >= 2.2.2
+2. Sistema de paquete [RubyGems](https://rubygems.org/)
+3. [SQLite3](https://www.sqlite.org/)
 
 ## Instalación
 
@@ -21,9 +21,9 @@
 
 ## Configuración
 
-1.- Creación base de datos: `rails db:create`
-2.- Migración: `rails db:migrate`
-3.- Seed con datos de regiones, provincias y comunas: `rails db:seed`
+1. Creación base de datos: `rails db:create`
+2. Migración: `rails db:migrate`
+3. Seed con datos de regiones, provincias y comunas: `rails db:seed`
 
 ## Estado
 
@@ -33,12 +33,12 @@ Por el momento solo tiene el cod y el nombre de la region, provincia o comuna y 
 
 Provincias de una región por ID (autoincremental): `Region.find_by_id(1).provinces`
 
-[<Province id: 1, code: "151", name: "Arica", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22", region_id: 1>, #<Province id: 2, code: "152", name: "Parinacota", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22", region_id: 1>]
+~~[<Province id: 1, code: "151", name: "Arica", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22", region_id: 1>, #<Province id: 2, code: "152", name: "Parinacota", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22", region_id: 1>]~~
 
 Región de una provincia encontrada por su nombre:`Province.find_by_name("Llanquihue").region`
-<Region id: 12, code: "10", name: "Región de Los Lagos", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22"> 
+~~<Region id: 12, code: "10", name: "Región de Los Lagos", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22"> ~~
 
 Comuna encontrada por su nombre: `County.findby_name("Puente Alto")`
 
-<County id: 327, code: "13201", name: "Puente Alto", created_at: "2017-02-27 21:11:25", updated_at: "2017-02-27 21:11:25", province_id: 50> 
+~~<County id: 327, code: "13201", name: "Puente Alto", created_at: "2017-02-27 21:11:25", updated_at: "2017-02-27 21:11:25", province_id: 50> ~~
 
