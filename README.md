@@ -39,7 +39,7 @@ Región de una provincia encontrada por su nombre:`Province.find_by_name("Llanqu
 
 ```<Region id: 12, code: "10", name: "Región de Los Lagos", created_at: "2017-02-27 21:11:22", updated_at: "2017-02-27 21:11:22">```
 
-Comuna encontrada por su nombre: `County.findby_name("Puente Alto")`
+Comuna encontrada por su nombre: `County.find_by_name("Puente Alto")`
 
 ```<County id: 327, code: "13201", name: "Puente Alto", created_at: "2017-02-27 21:11:25", updated_at: "2017-02-27 21:11:25", province_id: 50>```
 
